@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ResearchRadar 🚀</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Title -->
+    <h1>🔬 ResearchRadar</h1>
+    <p class="subtitle">AI-powered research paper discovery</p>
+    <!-- <div class="tagline">Discover research smarter with AI 🚀</div> -->
+
+    <!-- 🔝 Top Bar -->
+<!-- <div class="top-bar">
+  <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+</div> -->
+
+    <!-- Input Controls -->
+    <div class="controls">
+      <input id="topic" type="text" placeholder="Enter topic (e.g., NLP, ML)" />
+      <button onclick="runPipeline()">Run</button>
+    </div>
+
+    <!-- Suggestions -->
+    <div id="suggestions" class="suggestions"></div>
+
+    <!-- Loading -->
+    <div id="loading" class="hidden">⏳ Fetching papers...</div>
+
+    <!-- Results -->
+    <div id="results" class="results"></div>
+
+    <!-- Chart -->
+    <div class="chart-container">
+      <canvas id="chart"></canvas>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbox">
+      <h3>🤖 Ask About Papers</h3>
+      <input id="chatInput" placeholder="Ask something..." />
+      <button onclick="askAI()">Ask</button>
+      <div id="chatOutput"></div>
+    </div>
+
+  </div>
+
+  <!-- IMPORTANT: Your JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
