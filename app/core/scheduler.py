@@ -10,5 +10,5 @@ def run_job():
     print("Scheduled results:", results)
 
 def start_scheduler():
-    scheduler.add_job(run_job, "interval", minutes=30)
+    scheduler.add_job(run_job, "interval", hours=24)
     scheduler.start()
